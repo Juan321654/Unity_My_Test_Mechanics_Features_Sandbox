@@ -30,7 +30,7 @@ public class GoToTarget : MonoBehaviour
 
     void FollowTargetNormalized()
     {
-        Debug.Log("Following target");
+        // Debug.Log("Following target");
         Vector3 direction = (target.transform.position - transform.position).normalized;
         rb.AddForce(direction * speed);
     }
