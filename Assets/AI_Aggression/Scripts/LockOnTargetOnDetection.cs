@@ -18,7 +18,13 @@ public class LockOnTargetOnDetection : MonoBehaviour
         else
         {
             detector.OnTargetDetected += LockOnTarget;
+            detector.OnTargetLost += ClearTarget;
         }
+    }
+
+    private void ClearTarget()
+    {
+        detectedTarget = null;
     }
 
     private void LockOnTarget()

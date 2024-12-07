@@ -241,10 +241,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rayDistance: 15
-  rayColor: {r: 0, g: 1, b: 0, a: 1}
+  rayColor: {r: 1, g: 0, b: 0.037246227, a: 1}
   detectionLayer:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 63
   targetTag: Player
 --- !u!114 &265047177
 MonoBehaviour:
@@ -261,6 +261,18 @@ MonoBehaviour:
   headTransform: {fileID: 265047173}
   detector: {fileID: 265047176}
   rotationSpeed: 5
+--- !u!114 &265047180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265047172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6595f63f69e2274d9f39e0be31bd522, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &584616691
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,7 +285,7 @@ GameObject:
   - component: {fileID: 584616695}
   - component: {fileID: 584616694}
   - component: {fileID: 584616693}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -677,6 +689,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1241351975404944756, guid: 5919dff542c0fc440b1ed1408dcaee45, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1241351975412126366, guid: 5919dff542c0fc440b1ed1408dcaee45, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.21
@@ -721,7 +737,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: turret_1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1241351975404944756, guid: 5919dff542c0fc440b1ed1408dcaee45, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -731,6 +748,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1241351975412223666, guid: 5919dff542c0fc440b1ed1408dcaee45, type: 3}
       insertIndex: -1
       addedObject: {fileID: 265047177}
+    - targetCorrespondingSourceObject: {fileID: 1241351975412223666, guid: 5919dff542c0fc440b1ed1408dcaee45, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 265047180}
   m_SourcePrefab: {fileID: 100100000, guid: 5919dff542c0fc440b1ed1408dcaee45, type: 3}
 --- !u!1 &1854573840
 GameObject:
